@@ -59,6 +59,8 @@
                     <artifactId>maven-checkstyle-plugin</artifactId>
                     <version>${checkstyle-maven-plugin.version}</version>
                     <configuration>
+                        <!-- This will exclude the Open API generated POJOs -->
+                        <excludeGeneratedSources>true</excludeGeneratedSources>
                         <consoleOutput>true</consoleOutput>
                         <violationSeverity>warning</violationSeverity>
                         <failOnViolation>true</failOnViolation>
